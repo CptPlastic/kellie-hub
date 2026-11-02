@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Kellie's Home Hub</title>
+<meta name="description" content="Paydays, card plan, dinners, groceries, and chores in one spot.">
+<meta name="theme-color" content="#6b4fa3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1726" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Home Hub">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-180.png" sizes="180x180" type="image/png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <img src="icon.svg" alt="" class="logo" width="48" height="48">
+  <div>
+    <h1>Kellie's Home Hub</h1>
+    <p class="sub">Your paydays, card plan, dinners, groceries, and chores in one spot, from Girl Raccoon Math. Updated Nov 2, 2026.</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <a href="#coming-up">Coming up</a>
+  <a href="#cards">Card payoff plan</a>
+  <a href="#loans">Loans</a>
+  <a href="#dinners">Work set dinners</a>
+  <a href="#groceries">Grocery list</a>
+  <a href="#chores">Chore chart</a>
+  <a href="#offweek">Off-week rhythm</a>
+  <a href="#change">Want something changed?</a>
+</nav>
+
+<main>
+<section id="coming-up" class="card">
+  <h2>Coming up</h2>
+  <h3 class="month">November 2026</h3>
+  <div class="cal" id="cal" aria-hidden="true"></div>
+  <ul class="agenda" id="agenda"></ul>
+  <p class="note">Each payday, <strong>$824</strong> goes to your Bill account and autopay covers the bills.</p>
+
+  <h3>Your paydays ahead</h3>
+  <ul class="rows">
+    <li><span class="lead">Nov 12</span><span class="title">Payday</span><span class="meta">$1,649.85</span></li>
+    <li><span class="lead">Nov 26</span><span class="title">Payday (Thanksgiving)</span><span class="meta">$1,649.85</span></li>
+    <li><span class="lead">Dec 10</span><span class="title">Payday</span><span class="meta">$1,649.85</span></li>
+    <li><span class="lead">Dec 24</span><span class="title">Payday</span><span class="meta">$1,649.85</span></li>
+    <li><span class="lead">Jan 7</span><span class="title">Payday</span><span class="meta">$1,649.85</span></li>
+    <li><span class="lead">Jan 21</span><span class="title">Payday</span><span class="meta">$1,649.85</span></li>
+    <li><span class="lead">Feb 4</span><span class="title">Payday</span><span class="meta">$1,649.85</span></li>
+  </ul>
+</section>
+
+<section id="cards" class="card">
+  <h2>Card payoff plan</h2>
+  <dl class="props">
+    <div><dt>Lowe's balance</dt><dd>$2,635.78</dd></div>
+    <div><dt>Status</dt><dd><span class="pill">Planned for Nov 3</span></dd></div>
+    <div><dt>Promo 1</dt><dd>$369.32, ends Nov 12</dd></div>
+    <div><dt>Promo 2</dt><dd>$504.90, ends Feb 10, 2027</dd></div>
+    <div><dt>Interest avoided</dt><dd>$261.81</dd></div>
+    <div><dt>From savings</dt><dd>About $7,364 left after</dd></div>
+  </dl>
+
+  <ol class="steps">
+    <li><strong>Lowe's: pay in full</strong><span>Planned Nov 3 from savings. Check the exact payoff amount first, then turn off the Lowe's autopay.</span></li>
+    <li><strong>American Airlines: about $1,828 at 29.74%</strong><span>Gets its $50 a paycheck plus the freed $300 a month. Paid off in about 5 months.</span></li>
+    <li><strong>Discover: about $1,697 at 26%</strong><span>Everything rolls here next. Gone about 3 months later.</span></li>
+    <li><strong>Then the Bronco</strong><span>The $300 a month moves to the Bronco loan.</span></li>
+  </ol>
+
+  <h3>Interest on AA + Discover</h3>
+  <div class="bars">
+    <div class="bar-row emph">
+      <div class="bar-label"><span>With the $300 rolled over</span><span class="bar-val">$360</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width:33.6%"></div></div>
+      <div class="bar-meta">about 8 months</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label"><span>$50 a paycheck each</span><span class="bar-val">$1,072</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+      <div class="bar-meta">almost 2 years</div>
+    </div>
+  </div>
+  <p class="note">Estimates. The 8 months works if Boy Raccoon's share of the $300 keeps going to the cards.</p>
+  <p class="quip">🦝 <strong>Girl math, explained by a raccoon:</strong> when one trash can is empty, you move the snack budget to the next can. Same snacks, both cans cleared in about 8 months.</p>
+</section>
+
+<section id="loans" class="card">
+  <h2>Loans</h2>
+  <table class="tbl">
+    <thead><tr><th>Loan</th><th>Left</th><th>Rate</th><th>Monthly</th></tr></thead>
+    <tbody>
+      <tr><td>Bronco</td><td>$37,050</td><td>8.94%</td><td>$891</td></tr>
+      <tr><td>Boat</td><td>$7,307</td><td>7.99%</td><td>$457</td></tr>
+    </tbody>
+  </table>
+  <p class="note">After the cards are done, the $300 a month goes to the Bronco.</p>
+</section>
+
+<section id="dinners" class="card">
+  <h2>Work set dinners</h2>
+  <ul class="rows dinners">
+    <li><span class="lead">Sat Nov 7</span><span class="title">Crockpot chili (leftovers = your shift meals)</span></li>
+    <li><span class="lead">Sun Nov 8</span><span class="title">Sheet-pan sausage, potatoes, green beans + 1-hour cook-ahead</span></li>
+    <li><span class="lead">Mon Nov 9</span><span class="title">Tacos or burrito bowls</span></li>
+    <li><span class="lead">Tue Nov 10</span><span class="title">Spaghetti with meat sauce + salad</span></li>
+    <li><span class="lead">Wed Nov 11</span><span class="title">Crockpot chicken (start 7:30 AM)</span></li>
+    <li><span class="lead">Thu Nov 12</span><span class="title">Breakfast for dinner</span></li>
+    <li><span class="lead">Fri Nov 13</span><span class="title">Pizza or leftovers, nobody cooks</span></li>
+  </ul>
+  <p class="note">No shellfish anywhere. Whoever cooks doesn't do dishes.</p>
+</section>
+
+<section id="groceries" class="card">
+  <h2>Grocery list</h2>
+  <div class="seg" role="tablist" data-target="grocery">
+    <button role="tab" data-v="meat" aria-selected="true">Meat</button>
+    <button role="tab" data-v="produce">Produce</button>
+    <button role="tab" data-v="pantry">Pantry</button>
+    <button role="tab" data-v="dairy">Dairy</button>
+    <button role="tab" data-v="freezer">Freezer</button>
+    <button role="tab" data-v="shift">Shift boxes</button>
+  </div>
+  <div class="panels" id="grocery">
+    <ul class="bullets" data-p="meat">
+      <li>2 lb ground beef for the chili</li>
+      <li>3 lb ground beef for Sunday's cook-ahead</li>
+      <li>3 to 4 lb boneless chicken breasts or thighs</li>
+      <li>2 packs smoked sausage</li>
+      <li>1 lb bacon or breakfast sausage</li>
+    </ul>
+    <ul class="bullets" data-p="produce">
+      <li>3 lb baby potatoes</li>
+      <li>2 bags green beans (fresh or frozen)</li>
+      <li>2 onions, 2 tomatoes, 1 jalapeno (optional)</li>
+      <li>1 bag shredded lettuce</li>
+      <li>2 bags salad mix</li>
+      <li>Fruit for shift snacks (apples, bananas, grapes)</li>
+    </ul>
+    <ul class="bullets" data-p="pantry">
+      <li>2 cans chili beans, 2 cans diced tomatoes</li>
+      <li>Chili seasoning and taco seasoning</li>
+      <li>2 jars pasta sauce, 2 boxes spaghetti</li>
+      <li>1 jar salsa or 1 bottle BBQ sauce</li>
+      <li>Tortillas and taco shells</li>
+      <li>1 bag rice</li>
+      <li>Pancake mix and syrup</li>
+      <li>Bread or buns</li>
+    </ul>
+    <ul class="bullets" data-p="dairy">
+      <li>2 dozen eggs, milk, butter</li>
+      <li>2 bags shredded cheese, sour cream</li>
+      <li>Cheese sticks for shift snacks</li>
+    </ul>
+    <ul class="bullets" data-p="freezer">
+      <li>2 frozen pizzas for Friday (or plan on takeout)</li>
+      <li>Frozen garlic bread</li>
+    </ul>
+    <ul class="bullets" data-p="shift">
+      <li>Wraps or tortillas, deli meat</li>
+      <li>Protein bars</li>
+      <li>Microwave containers if you need more</li>
+    </ul>
+  </div>
+  <p class="note">Shop Thu Nov 5 or Fri Nov 6. Read it into the Alexa once and it's on everyone's phones.</p>
+</section>
+
+<section id="chores" class="card">
+  <h2>Chore chart</h2>
+  <div class="seg" role="tablist" data-target="chore">
+    <button role="tab" data-v="w1" aria-selected="true">Week 1 (Nov 7–13)</button>
+    <button role="tab" data-v="w2">Week 2</button>
+    <button role="tab" data-v="w3">Week 3</button>
+  </div>
+  <div class="panels" id="chore">
+    <table class="tbl" data-p="w1">
+      <thead><tr><th>Nightly 10-min reset</th><th>Who</th></tr></thead>
+      <tbody>
+        <tr><td>Dishes + dishwasher</td><td>Boy Raccoon</td></tr>
+        <tr><td>Counters, stovetop, table</td><td>Boy Baby</td></tr>
+        <tr><td>Living room + trash</td><td>Girl Baby</td></tr>
+      </tbody>
+    </table>
+    <table class="tbl" data-p="w2">
+      <thead><tr><th>Nightly 10-min reset</th><th>Who</th></tr></thead>
+      <tbody>
+        <tr><td>Dishes + dishwasher</td><td>Boy Baby</td></tr>
+        <tr><td>Counters, stovetop, table</td><td>Girl Baby</td></tr>
+        <tr><td>Living room + trash</td><td>Boy Raccoon</td></tr>
+      </tbody>
+    </table>
+    <table class="tbl" data-p="w3">
+      <thead><tr><th>Nightly 10-min reset</th><th>Who</th></tr></thead>
+      <tbody>
+        <tr><td>Dishes + dishwasher</td><td>Girl Baby</td></tr>
+        <tr><td>Counters, stovetop, table</td><td>Boy Raccoon</td></tr>
+        <tr><td>Living room + trash</td><td>Boy Baby</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Then repeat. On your off weeks, join in or take the easiest zone.</p>
+
+  <h3>Laundry and weekend jobs</h3>
+  <ul class="rows">
+    <li><span class="lead">Mon–Fri</span><span class="title">One load of laundry a day<small>First up starts it, first home after 5 moves it to the dryer.</small></span></li>
+    <li><span class="lead">Weekend</span><span class="title">Bathroom wipe-down</span><span class="meta">Boy Raccoon</span></li>
+    <li><span class="lead">Weekend</span><span class="title">Vacuum and sweep main areas</span><span class="meta">Boy Baby</span></li>
+    <li><span class="lead">Weekend</span><span class="title">Kitchen floor + fridge clean-out</span><span class="meta">Girl Baby</span></li>
+    <li><span class="lead">Sunday</span><span class="title">1-hour cook-ahead</span><span class="meta">Everyone</span></li>
+  </ul>
+</section>
+
+<section id="offweek" class="card">
+  <h2>Off-week rhythm</h2>
+  <ol class="steps">
+    <li><strong>Saturday: rest</strong><span>Truly. You just did 84 hours.</span></li>
+    <li><strong>Sunday: family reset</strong><span>1-hour all-hands clean, everyone takes a zone.</span></li>
+    <li><strong>Monday: laundry and bedding</strong></li>
+    <li><strong>Tuesday: one project space</strong><span>1 to 2 hour timer, three boxes: keep, donate, trash.</span></li>
+    <li><strong>Wednesday: bathrooms and floors</strong></li>
+    <li><strong>Thursday: plan, shop, prep</strong><span>Next week's dinners, groceries, and your shift meals.</span></li>
+    <li><strong>Friday: Bronco wash and gas</strong><span>Plus a quick fridge clean-out and an easy evening.</span></li>
+  </ol>
+</section>
+
+<section id="change" class="card">
+  <h2>Want something changed?</h2>
+  <p>Just email Girl Raccoon Math and it gets updated here.</p>
+  <a class="btn" href="mailto:choon@mail.grokbot.com?subject=Home%20Hub%20change">Email choon@mail.grokbot.com</a>
+</section>
+</main>
+
+<footer class="foot">Made by Girl Raccoon Math 🦝 · Updated Nov 2, 2026</footer>
+<script src="app.js"></script>
+</body>
+</html>
