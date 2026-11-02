@@ -27,20 +27,19 @@ h3 { font-size: 17px; margin: 20px 0 8px; }
 h3.month { margin-top: 0; color: var(--muted); font-weight: 600; }
 
 .toc {
-  position: sticky; top: 0; z-index: 5; display: flex; gap: 8px; overflow-x: auto;
-  padding: 10px 16px; background: var(--bg); border-bottom: 1px solid var(--line);
-  -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  display: flex; flex-wrap: wrap; gap: 8px; max-width: 640px; margin: 0 auto;
+  padding: 10px 16px 12px; background: var(--bg); border-bottom: 1px solid var(--line);
 }
 .toc::-webkit-scrollbar { display: none; }
 .toc a {
-  flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px;
+  flex: 0 1 auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 14px;
   border-radius: 999px; background: var(--accent-soft); color: var(--text); text-decoration: none;
   font-size: 15px; font-weight: 600; white-space: nowrap;
 }
 main { max-width: 640px; margin: 0 auto; padding: 12px 12px 8px; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 18px 16px; margin: 0 0 14px; scroll-margin-top: 76px;
+  padding: 18px 16px; margin: 0 0 14px; scroll-margin-top: 12px;
 }
 .note { color: var(--muted); font-size: 15px; margin: 12px 0 0; }
 .note strong { color: var(--text); }
