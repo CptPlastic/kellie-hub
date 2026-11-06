@@ -2,17 +2,19 @@
   // November 2026 calendar (same events as the Home Hub page)
   var events = [
     ["2026-11-03", "Lowe's paid off ✅", "money"],
-    ["2026-11-05", "Grocery shop", "home"],
-    ["2026-11-06", "Bronco wash + gas", "home"],
+    ["2026-11-06", "Grocery shop (Aldi Yukon)", "home"],
+    ["2026-11-06", "Bronco wash (skip if rainy)", "home"],
     ["2026-11-07", "Work set starts", "work"],
     ["2026-11-12", "Payday", "pay"],
     ["2026-11-14", "Off week starts", "off"],
+    ["2026-11-15", "Liberty Mutual (~$470)", "money"],
     ["2026-11-16", "Boy Raccoon's first check", "pay"],
+    ["2026-11-19", "Mortgage (~$2,291)", "money"],
     ["2026-11-21", "Work set starts", "work"],
     ["2026-11-26", "Payday", "pay"],
     ["2026-11-26", "Thanksgiving", "home"]
   ];
-  var TODAY = 3; // Nov 3, 2026 (date the hub was last updated)
+  var TODAY = 6; // Nov 6, 2026 (date the hub was last updated)
   var now = new Date();
   if (now.getFullYear() === 2026 && now.getMonth() === 10) TODAY = now.getDate();
 
