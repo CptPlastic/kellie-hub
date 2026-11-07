@@ -62,4 +62,42 @@
     buttons.forEach(function (b) { b.addEventListener("click", function () { show(b.getAttribute("data-v")); }); });
     show(buttons[0].getAttribute("data-v"));
   });
+
+  // Grocery checklist (saved on this phone)
+  var KEY = "kh-grocery-2026-11-07";
+  var boxes = document.querySelectorAll("#grocery input[type=checkbox]");
+  if (boxes.length) {
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+    var countEl = document.getElementById("grocery-count");
+    function update() {
+      var done = 0;
+      boxes.forEach(function (b) { if (b.checked) done++; });
+      countEl.textContent = done === boxes.length ? "All " + done + " in the cart 🦝" : done + " of " + boxes.length + " in the cart";
+      document.querySelectorAll('[data-target="grocery"] button').forEach(function (btn) {
+        var list = document.querySelector('#grocery [data-p="' + btn.getAttribute("data-v") + '"]');
+        var all = list.querySelectorAll("input"), n = 0;
+        all.forEach(function (b) { if (b.checked) n++; });
+        var c = btn.querySelector(".cnt");
+        if (!c) { c = document.createElement("span"); c.className = "cnt"; btn.appendChild(c); }
+        c.textContent = n === all.length ? "✓" : n + "/" + all.length;
+      });
+    }
+    boxes.forEach(function (b) {
+      b.checked = !!saved[b.getAttribute("data-id")];
+      b.addEventListener("change", function () {
+        saved[b.getAttribute("data-id")] = b.checked;
+        try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+        update();
+      });
+    });
+    document.getElementById("grocery-reset").addEventListener("click", function () {
+      if (!confirm("Uncheck everything and start a fresh list?")) return;
+      saved = {};
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      boxes.forEach(function (b) { b.checked = false; });
+      update();
+    });
+    update();
+  }
 })();

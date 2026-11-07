@@ -126,3 +126,14 @@ main { max-width: 640px; margin: 0 auto; padding: 12px 12px 8px; }
   text-align: center; word-break: break-word;
 }
 .foot { text-align: center; color: var(--muted); font-size: 13px; padding: 8px 16px 28px; }
+
+/* grocery checklist */
+.checklist { list-style: none; margin: 0; padding: 0; }
+.checklist li { border-top: 1px solid var(--line); }
+.checklist li:first-child { border-top: 0; }
+.checklist label { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 8px 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.checklist input { flex: none; width: 22px; height: 22px; margin: 0; accent-color: var(--accent); }
+.checklist input:checked + span { text-decoration: line-through; opacity: .5; }
+.check-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.check-bar button { font: inherit; font-weight: 600; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: inherit; min-height: 40px; }
+.seg button .cnt { opacity: .7; font-weight: 500; margin-left: 4px; }
