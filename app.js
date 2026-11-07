@@ -124,4 +124,16 @@
       setTimeout(go, 2500);
     } else go();
   }
+
+  // Moving candy stripes on the debt bar (JS-driven so every phone animates it)
+  var stripe = document.getElementById("trk-fill");
+  if (stripe) {
+    var off = 0, last = null;
+    (function step(t) {
+      if (last !== null) off = (off + (t - last) * 0.035) % 28;
+      last = t;
+      stripe.style.backgroundPosition = off.toFixed(2) + "px 0";
+      requestAnimationFrame(step);
+    })(performance.now());
+  }
 })();
