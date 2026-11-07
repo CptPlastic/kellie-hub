@@ -14,7 +14,7 @@
     ["2026-11-26", "Payday", "pay"],
     ["2026-11-26", "Thanksgiving", "home"]
   ];
-  var TODAY = 6; // Nov 6, 2026 (date the hub was last updated)
+  var TODAY = 7; // Nov 7, 2026 (date the hub was last updated)
   var now = new Date();
   if (now.getFullYear() === 2026 && now.getMonth() === 10) TODAY = now.getDate();
 
