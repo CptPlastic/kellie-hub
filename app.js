@@ -100,4 +100,28 @@
     });
     update();
   }
+
+  // Debt tracker animation
+  var trk = document.getElementById("tracker");
+  if (trk) {
+    var start = parseFloat(trk.getAttribute("data-start")), left = parseFloat(trk.getAttribute("data-left"));
+    var pct = Math.round((start - left) / start * 100);
+    var ring = document.getElementById("trk-ring"), fill = document.getElementById("trk-fill"), pctEl = document.getElementById("trk-pct");
+    var C = 2 * Math.PI * 52;
+    var started = false;
+    function go() {
+      if (started) return; started = true;
+      ring.style.strokeDashoffset = (C * (1 - pct / 100)).toFixed(2);
+      fill.style.width = pct + "%";
+      var t0 = null;
+      function tick(t) { if (!t0) t0 = t; var p = Math.min((t - t0) / 1800, 1); pctEl.textContent = Math.round(pct * (1 - Math.pow(1 - p, 3))) + "%"; if (p < 1) requestAnimationFrame(tick); }
+      requestAnimationFrame(tick);
+      setTimeout(function () { pctEl.textContent = pct + "%"; }, 1900);
+    }
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { go(); io.disconnect(); } }, { threshold: 0.3 });
+      io.observe(trk);
+      setTimeout(go, 2500);
+    } else go();
+  }
 })();
